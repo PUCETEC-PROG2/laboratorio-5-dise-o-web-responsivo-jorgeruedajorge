@@ -1,8 +1,8 @@
 .navbar {
     position: sticky;
-    background-color: rgb(54, 153, 29);
-    box-shadow: 0 2px 4px rgba(rgb(128, 47, 47), rgb(22, 85, 22), rgb(41, 41, 153), alpha);
     top: 0;
+    background-color: rgb(54, 153, 29);  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     z-index: 1000;
 }
 
@@ -89,25 +89,8 @@
     font-size: 16px;
 }
 
-@media screen and (max-width: 900px) {
-    .pokemon-grid {
-        width: 100%;
-        gap: 8px;
-    }
-
-    .pokemon-card {
-        flex: 1 1 calc(50% - 16px); 
-        max-width: calc(50% - 16px);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .pokemon-grid {
-        gap: 8px;
-    }
-
-    .pokemon-card {
-        flex: 1 1 100%;
-        max-width: 100%;
+@media (max-width: 480px) {
+    .trainers-grid {
+        grid-template-columns: 1fr;
     }
 }
