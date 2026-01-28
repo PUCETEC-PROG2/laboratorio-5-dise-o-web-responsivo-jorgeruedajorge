@@ -97,7 +97,7 @@
 
 @media (max-width: 480px) {
     .trainers-grid {
-        grid-template-columns: 1fr; /* 1 sola columna para que no se vea amontonado */
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 }
